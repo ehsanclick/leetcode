@@ -4,7 +4,7 @@
 
 You can use the [editor on GitHub](https://github.com/ehsanclick/leetcode/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-[309. Best Time to Buy and Sell Stock with Cooldown](https://github.com/ehsanclick/leetcode/309/)
+[309. Best Time to Buy and Sell Stock with Cooldown](https://ehsanclick.github.io/leetcode/309)
 
 
 ### Markdown
