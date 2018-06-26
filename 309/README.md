@@ -1,7 +1,6 @@
 ## Best Time to Buy and Sell Stock with Cooldown
 [Description:](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/)
 
-```markdown
 Say you have an array for which the ith element is the price of a given stock on day _i_.
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions:
@@ -10,11 +9,11 @@ Design an algorithm to find the maximum profit. You may complete as many transac
  - After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)
  
 Example:
-`
+```
 Input: [1,2,3,0,2]
 Output: 3 
 Explanation: transactions = [buy, sell, cooldown, buy, sell]
-`
+```
 
 
 You can use the [editor on GitHub](https://github.com/ehsanclick/leetcode/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
