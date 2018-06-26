@@ -39,9 +39,11 @@ rest[i] means before day i what is the maxProfit for any sequence end with rest.
 
 Then we want to deduce the transition functions for buy sell and rest. By definition we have:
 
+```
 buy[i]  = max(rest[i-1]-price, buy[i-1]) 
 sell[i] = max(buy[i-1]+price, sell[i-1])
 rest[i] = max(sell[i-1], buy[i-1], rest[i-1])
+```
 
 Where price is the price of day i. All of these are very straightforward. They simply represents :
 
