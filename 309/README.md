@@ -23,20 +23,22 @@ You can use the [editor on GitHub](https://github.com/ehsanclick/leetcode/edit/m
 
 The series of problems are typical dp. The key for dp is to find the variables to represent the states and deduce the transition function.
 
-Of course one may come up with a O(1) space solution directly, but I think it is better to be generous when you think and be greedy when you implement.
+Of course one may come up with a ```O(1)``` space solution directly, but I think it is better to be generous when you think and be greedy when you implement.
 
 The natural states for this problem is the 3 possible transactions : buy, sell, rest. Here rest means no transaction on that day (aka cooldown).
 
 Then the transaction sequences can end with any of these three states.
 
-For each of them we make an array, buy[n], sell[n] and rest[n].
+For each of them we make an array, ```buy[n], sell[n]``` and ```rest[n]```.
 
-buy[i] means before day i what is the maxProfit for any sequence end with buy.
+```
+ buy[i] means before day i what is the maxProfit for any sequence end with buy.
 
-sell[i] means before day i what is the maxProfit for any sequence end with sell.
+ sell[i] means before day i what is the maxProfit for any sequence end with sell.
 
-rest[i] means before day i what is the maxProfit for any sequence end with rest.
+ rest[i] means before day i what is the maxProfit for any sequence end with rest.
 
+```
 Then we want to deduce the transition functions for buy sell and rest. By definition we have:
 
 ```
