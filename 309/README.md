@@ -54,13 +54,24 @@ Where price is the price of day i. All of these are very straightforward. They s
 
 One tricky point is how do you make sure you sell before you buy, since from the equations it seems that [buy, rest, buy] is entirely possible.
 
-Well, the answer lies within the fact that buy[i] <= rest[i] which means rest[i] = max(sell[i-1], rest[i-1]). That made sure [buy, rest, buy] is never occurred.
+Well, the answer lies within the fact that `buy[i] <= rest[i]` which means `rest[i] = max(sell[i-1]`, `rest[i-1]`). That made sure [buy, rest, buy] is never occurred.
 
-A further observation is that and rest[i] <= sell[i] is also true therefore
+A further observation is that and `rest[i] <= sell[i]` is also true 
 
-rest[i] = sell[i-1]
+`MY COMMENT`
+Here is why:
+`rest[i] = max(sell[i-1], rest[i-1])
+rest[i] > sell[i]` if and only if `rest[i-1] > sell[i-1]`
+and that should be true for every _i_, however,
+`rest[0] == sell[0] == 0`
+contradiction
 
-Substitute this in to buy[i] we now have 2 functions instead of 3:
+
+therefore
+
+`rest[i] = sell[i-1]`
+
+Substitute this in to `buy[i]` we now have 2 functions instead of 3:
 
 ```
 buy[i] = max(sell[i-2]-price, buy[i-1])
