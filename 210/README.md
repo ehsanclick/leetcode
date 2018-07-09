@@ -28,6 +28,19 @@ Explanation: There are a total of 4 courses to take. To take course 3 you should
 
 [Solution](https://leetcode.com/problems/course-schedule-ii/discuss/59316/20+-lines-C++-BFSDFS-Solutions)
 
+It can be done in two pass, as described in coursera course.
+This approach is easier:
+
+1) Creat a graph as list of edges (as in-comming edges) 
+2) Calculate the degree of all nodes
+  - there should be atleas a sink node (i.e. a node of degree 0)
+  - add sink nodes to q
+3) Select a sink node from q: 
+  - Decrease degree of neighbor nodes
+  - add to sink node set if degree == 0
+  
+  
+
 **BFS**
 ```c++
 class Solution {
@@ -69,7 +82,7 @@ private:
 ```
 
 **DFS**
-
+ -- READ LATER
 ```c++
 class Solution {
 public:
