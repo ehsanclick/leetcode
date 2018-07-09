@@ -1,4 +1,5 @@
 #Ugly Number
+
 **EASY ONE**
 
 [Description](https://leetcode.com/problems/ugly-number/description/)
