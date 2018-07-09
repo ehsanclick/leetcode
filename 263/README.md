@@ -28,6 +28,7 @@ Explanation: 14 is not ugly since it includes another prime factor 7.
 
 [Solution](https://leetcode.com/problems/ugly-number/discuss/69214/2-4-lines-every-language)
 
+Just divide by 2, 3 and 5 as often as possible and then check whether we arrived at 1. Also try divisor 4 if that makes the code simpler / less repetitive.
 Just check all factors <=5. (4 = 2 x 2 so 4 is ok and increases the speed )
 
 ```c++
