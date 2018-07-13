@@ -28,6 +28,10 @@ Go _in order_ in two passes:
 
 
 **In Order Travers!**
+[In Order Travers](https://github.com/ehsanclick/leetcode/tree/master/94)
+
+The following is the same, more complex but does not change the root:
+
 ```c++
 private void inorder(TreeNode root) {
         TreeNode node = root;
@@ -51,3 +55,5 @@ private void inorder(TreeNode root) {
         }
     }
 ```
+
+
