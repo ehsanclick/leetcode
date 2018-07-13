@@ -25,3 +25,29 @@ return [2].
 Go _in order_ in two passes:
 1) count mode_count
 2) return mode(s)
+
+
+**In Order Travers!**
+```c++
+private void inorder(TreeNode root) {
+        TreeNode node = root;
+        while (node != null) {
+            if (node.left == null) {
+                handleValue(node.val);
+                node = node.right;
+            } else {
+                TreeNode prev = node.left;
+                while (prev.right != null && prev.right != node)
+                    prev = prev.right;
+                if (prev.right == null) {
+                    prev.right = node;
+                    node = node.left;
+                } else {
+                    prev.right = null;
+                    handleValue(node.val);
+                    node = node.right;
+                }
+            }
+        }
+    }
+```
