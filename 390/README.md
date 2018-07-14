@@ -34,6 +34,9 @@ On left two right we always start from 1 (odd numbers eliminate)
 On right to left it depends on the number of n:
  - if _*n*_ is odd: start from begining (odd number eliminate)
  - if _*n*_ is even: start from 2 (even numbers eliminate) 
+ 
+ Pay attention to the -1 in the formulla!
+ 
 
 ```c++
 class Solution {
