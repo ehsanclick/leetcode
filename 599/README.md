@@ -57,6 +57,7 @@ vector<string> findRestaurant(vector<string>& list1, vector<string>& list2) {
 ```
 ### HashMap
 
+```c++
 vector<string> findRestaurant2(vector<string>& list1, vector<string>& list2) {
     unordered_map<string, int> hash;
     vector<string> * shList = (list1.size() <= list2.size()) ? &list1 : &list2;
@@ -78,4 +79,5 @@ vector<string> findRestaurant2(vector<string>& list1, vector<string>& list2) {
     }
     return res;
 }
+```
 
