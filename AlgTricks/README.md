@@ -24,3 +24,4 @@ At each level the probability of each number so far would be _1/ni_
 - Random Pick Index
 [Leetcode](https://leetcode.com/problems/random-pick-index/description/)
 
+[Expand around the center technique for palindrom:](https://github.com/ehsanclick/leetcode/tree/master/5)
