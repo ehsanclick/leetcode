@@ -35,12 +35,11 @@ public:
         vector<Interval> res;
         res.push_back(intervals[0]);
         for (auto a: intervals){
-            if (res.back().end >= a.start)// && res.back().end <= a.end)
+            if (res.back().end >= a.start)
                 res.back().end = max(a.end, res.back().end);
             else
                 res.push_back(a);
         }
-        //res.erase(res.begin());
         return res;
     }
 };
