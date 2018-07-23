@@ -1,6 +1,4 @@
 # Some C++ Tricks
- ## Vector as map value, insert new key and push back immediately
- ## Sub1
 
 ## Vector as map value, insert new key and push back immediately
 [Reference](https://stackoverflow.com/questions/31166751/vector-as-map-value-insert-new-key-and-push-back-immediately-c)
@@ -16,4 +14,6 @@ If _k_ does not match the key of any element in the container, the function inse
 A similar member function, `map::at`, has the same behavior when an element with the key exists, but **throws an exception** when it does not.
 
 
-## Sub1
+## Compare Function
+'[]' approach: [MergeInterval](https://ehsanclick.github.io/leetcode/56/)
+
